@@ -1,10 +1,13 @@
 ﻿using Managment.System.Domain.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace Managment.System.Domain.Entities.UserEntities;
 
 public class User : BaseEntity
 {
+    [Required]
     public string Username { get; set; }
+    [Required]
     public string Password { get; set; }
     public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }

@@ -6,7 +6,7 @@ namespace Managment.System.Domain.Entities.UserEntities;
 public class User : BaseEntity
 {
     [Required]
-    public string Username { get; set; }
+    public string UserName { get; set; }
     [Required]
     public string Password { get; set; }
     public DateTime CreatedAt { get; set; }

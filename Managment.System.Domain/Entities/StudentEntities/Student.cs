@@ -11,4 +11,6 @@ public class Student : AudiTable
     public required string PhoneNumber { get; set; }
     public string? PhotoUrl { get; set; }
     public Status Status { get; set; }
+    public ICollection<StudentScience>? StudentSciences { get; set; }
+    public ICollection<StudentTaskResult>? TasksResults { get; set; }
 }

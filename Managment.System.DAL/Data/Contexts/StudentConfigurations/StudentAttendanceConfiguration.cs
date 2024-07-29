@@ -8,7 +8,7 @@ public class StudentAttendanceConfiguration : IEntityTypeConfiguration<StudentAt
 {
     public void Configure(EntityTypeBuilder<StudentAttendance> builder)
     {
-        builder.ToTable("student_attendance");
+        builder.ToTable("student_attendances");
         builder.HasKey(s => new { s.StudentId, s.TopicId });
         builder.Property(s => s.StudentId).IsRequired(true);
         builder.Property(s => s.TopicId).IsRequired(true);

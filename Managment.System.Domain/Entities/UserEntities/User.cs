@@ -13,5 +13,5 @@ public class User : BaseEntity
     public DateTime UpdatedAt { get; set; }
     public string Salt { get; set; }
     public Status Status { get; set; }
-    public ICollection<UserRole> UserRole { get; set; }
+    public ICollection<UserRole> UserRoles { get; set; }
 }

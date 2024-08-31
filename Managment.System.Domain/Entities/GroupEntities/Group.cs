@@ -9,7 +9,7 @@ public class Group : AudiTable
     public string Name { get; set; }
     public string Type { get; set; }
     public string Description { get; set; }
-    public required User User { get; set; }
+    public User User { get; set; }
     public long UserId { get; set; }
     public ICollection<Student> Students { get; set; } = new List<Student>();
     public ICollection<Topic> Topics { get; set; } = new List<Topic>();

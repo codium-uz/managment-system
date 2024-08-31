@@ -13,7 +13,7 @@ public class Student : AudiTable
     public string? PhotoUrl { get; set; }
     public Status Status { get; set; }
     public long GroupId { get; set; }
-    public required Group Group { get; set; }
+    public Group Group { get; set; }
     public ICollection<StudentScience>? StudentSciences { get; set; }
     public ICollection<StudentTaskResult>? TasksResults { get; set; }
 }
